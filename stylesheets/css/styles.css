@@ -1,7 +1,7 @@
 /* Slidster less file
    Author: Shaun Hare : @sdh100shaun
    License: http://shaun.mit-license.org/
-   Version : 1.0 
+   Version : 1.0
 */
 /* --------------------Configurable settings for reuse -------------------- */
 /* -------------------End of configuarble settings -------------- */
@@ -12,11 +12,13 @@ html {
 /* Main body styles */
 body {
   height: 100%;
-  background: url('images/bg-white-trans-uonlogo.png') no-repeat 89% 2.5em;
+  background: url('../../images/uon-logo-white.png') no-repeat 89% 2em;
   background-position: fixed;
-  min-height: 5em;
+  min-height: 15em;
   font-family: Georgia, Serif;
   color: #ffffff;
+  background-size: 300px 126px;
+  background-position: 0 100, 150px 150px;
 }
 section {
   margin: 4.5em auto;
@@ -26,8 +28,8 @@ section {
 }
 p {
   color: #ffffff;
-  font-size: 135%;
-  line-height: 165%;
+  font-size: 189%;
+  line-height: 205%;
 }
 /* Heading styles */
 h1,
@@ -36,18 +38,22 @@ h3,
 h4 {
   font-family: 'Rokkitt', serif;
   color: #ffffff;
+  padding-top: 2.8%;
 }
 h1 {
-  font-size: 300%;
+  font-size: 420%;
+}
+h1.large {
+  font-size: 840%;
 }
 h2 {
-  font-size: 250%;
+  font-size: 350%;
 }
 h3 {
-  font-size: 200%;
+  font-size: 280%;
 }
 h4 {
-  font-size: 150%;
+  font-size: 210%;
 }
 /* Section Styles */
 #slides section img {
@@ -55,8 +61,8 @@ h4 {
 }
 #slides section ul {
   padding: 1em;
-  margin-top: 2em;
-  font-size: 150%;
+  margin-top: 1em;
+  font-size: 210%;
   list-style-type: disc;
 }
 #slides section ul li {
@@ -66,6 +72,12 @@ h4 {
 }
 #slides section ul li.action {
   display: none;
+}
+#slides section ul li ul {
+  margin-top: 0.5em;
+}
+#slides section ul li ul li {
+  font-size: 70%;
 }
 #slides section ol {
   padding: 1em;
@@ -100,58 +112,15 @@ h4 {
   -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
 }
-#model {
-  border-radius: 225px;
-  -webkit-border-radius: 225px;
-  -moz-border-radius: 225px;
-  background-color: #cc0068;
-  height: 150px;
-  width: 150px;
-  float: left;
-}
-#model span {
-  position: relative;
-  top: 30%;
-  left: 30%;
-  color: #ffcccc;
-}
-#view {
-  border-radius: 225px;
-  -webkit-border-radius: 225px;
-  -moz-border-radius: 225px;
-  background-color: #ffffff;
-  height: 150px;
-  width: 150px;
-  float: left;
-  margin-right: -25px;
-}
-#view span {
-  position: relative;
-  top: 30%;
-  left: 30%;
-  color: #333;
-}
-#controller {
-  border-radius: 85px;
-  -webkit-border-radius: 85px;
-  -moz-border-radius: 85px;
-  background-color: #333333;
-  height: 150px;
-  width: 150px;
-  float: left;
-  margin-left: -25px;
-}
-#controller span {
-  position: relative;
-  top: 30%;
-  left: 30%;
-  color: #ffffff;
-}
 .right {
   float: right;
 }
 .clear {
   clear: both;
+}
+.row {
+  clear: both;
+  margin-top: 1em;
 }
 /* Header Navigation styles */
 /** Reused css styles **/
@@ -210,5 +179,15 @@ video {
 /* slide types */
 .title-slide {
   margin-top: 10em;
+}
+.x2 {
+  font-size: 252%;
+}
+.notop {
+  margin-top: 0.01em;
+}
+.section-fade {
+  -webkit-animation: fade .7s ease both;
+  animation: fade .7s ease both;
 }
 /* Mixins */

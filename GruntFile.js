@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
         stylesheets_less: {
             files: ['stylesheets/less/*'],
-            tasks: ['compile_less'],
+            tasks: ['less:compile_less'],
         },
     },
     less: {

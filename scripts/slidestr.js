@@ -4,27 +4,27 @@
  Version : 1.0
  requires jQuery
 */
-/** Slidestr Object **/ 
+/** Slidestr Object **/
 
-var Slidestr = function(options) { 
-	
+var Slidestr = function(options) {
+
 	this.init(options);
-	
-};
-	 
 
-	
+};
+
+
+
 /* Init function puts the slides into the stack. */
 Slidestr.prototype.init = function(options)
 	{
-		
+
 		this.options = $.extend({},this.defaults,options);
 		this.slides = $(this.options.slides);
 		this.slides.hide();
 		this.currentSlide=0;
 		this.showSlide();
 		this.setTopNavigation(this.options.navigationState);
-		
+
 	};
 
 Slidestr.prototype.setTopNavigation=function(state)
@@ -65,7 +65,7 @@ Slidestr.prototype.showSlide = function ()
 	}
 	location.hash = this.currentSlide;
 	history.pushState(null, null, location.href);
-	
+
 }
 
 Slidestr.prototype.hideSlide =function(slide)
@@ -95,7 +95,7 @@ Slidestr.prototype.defaults = {
 Slidestr.prototype.bindNavigation= function()
 {
 	var self=this;
-	
+
 	$("a[name='next']").bind('click',function(){
 		self.nextSlide();
 		return false;
@@ -103,12 +103,12 @@ Slidestr.prototype.bindNavigation= function()
 	$("a[name='previous']").bind('click',function(){
 		if(self.currentSlide>0)
 		{
-			
+
 			self.previousSlide();
 		}
 		return false;
 	});
-	
+
 	document.addEventListener('keydown', function(e)
 	        {
 	          switch(e.keyCode)
@@ -125,7 +125,7 @@ Slidestr.prototype.bindNavigation= function()
 
 	                        case 39: // right
 													case 13:
-													
+
 	                                self.nextSlide();
 	                                break;
 
@@ -133,12 +133,12 @@ Slidestr.prototype.bindNavigation= function()
 	                                self.hideAction();
 	                                break;
 	                };
-		
+
 	});
-	
+
 	window.addEventListener("popstate", function(e) {
-	    
-			
+
+
 	});
 }
 Slidestr.prototype.showAction = function()
@@ -146,13 +146,13 @@ Slidestr.prototype.showAction = function()
 	if($(this.slides[this.currentSlide]).find(".action").length)
 	{
 		$(this.slides[this.currentSlide]).find(".action:first").removeClass("action").addClass("action-shown");
-		
+
 	}
 	else
 	{
 		this.nextSlide();
 	}
-	
+
 }
 Slidestr.prototype.hideAction = function()
 {
@@ -164,7 +164,7 @@ Slidestr.prototype.hideAction = function()
 	{
 		this.previousSlide();
 	}
-	
+
 }
 Slidestr.prototype.slides;
 Slidestr.prototype.options;
@@ -173,12 +173,12 @@ Slidestr.prototype.currentSlide;
 
 
 var slides = {
-	
+
 	init: function(){
-		
+
 		slides = new Slidestr(options={navigationState:'hide'});
 		slides.bindNavigation();
 	}
-	
-	
+
+
 };

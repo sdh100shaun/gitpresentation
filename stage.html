@@ -4,8 +4,13 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/util.css" media="screen, projection,print" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/css/styles.css" />
 	<script src="scripts/jquery-1.7-min.js" type="text/javascript" charset="utf-8"></script>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ <!-- Polyfill Web Components support for older browsers -->
+<script src="bower_components/platform/platform.js"></script>
 
-
+<!-- Import element -->
+<link rel="import" href="bower_components/google-youtube/google-youtube.html">
+<link rel="import" href="bower_components/paper-elements/paper-elements.html">
 </head>
 <body>
 	<header>
@@ -19,33 +24,102 @@
 	<div id="slides">
 		<section class="title-slide">
 			<headergroup>
-				<h1>A sample slide</h1>
-
-			<h2>Second heading</h2>
+				<h1> GIT Version Control at UoN</h1>
+				<img src="images/git_logo.png" alt="git" />
+			<h2>Developer discussion / reccomendations </h2>
 			</headergroup>
-			<p>some text</p>
+			<p class="action">Note: may contain obligatory fork me jokes.</p>
 		</section>
 		<section>
 			<headergroup>
-			<h1>About Me.</h1>
+			<h1>Where we have been </h1>
 			</headergroup>
-			<ul>
-				<li class="action">A point with action </li>
-				<li class="action">A point with action </li>
-				<li class="action">A point with action</li>
+
+
+			<h2 class="action"> How to consolidate ?</h2>
+			<ul class="notop">
+				<li class="action">Sourcesafe </li>
+				<li class="action">Subversion</li>
+				<li class="action">Git
+					<ul><li class="action fa fa-github"> - Github Pro</li><li class="action fa fa-git"> - internal</li></ul></li>
 			</ul>
-
+		</headergroup>
 
 
 		</section>
 		<section>
 			<headergroup>
-			<h1>About</h1>
+			<h1 class="large fa fa-bitbucket"> - Bitbucket</h1>
 			</headergroup>
-			<p>you can use pretty much any html</p>
+			<ol class="x2">
+				<li class="action">Free Academic license  </li>
+				<li class="action">Nice Web interface  </li>
+				<li class="action">pull requests  </li>
+				<li class="action">integration with other Atlassian tools </li>
+				<li class="action">Offsite</li>
+			</ol>
+
+
 
 	  </section>
+		<section>
+			<headergroup>
+			<h1 class="large action fa fa-bitbucket"> - Bitbucket</h1>
+			</headergroup>
+			<div class="row">
 
+			<img src="images/bitbucket.png" class="section-fade" alt="bitbucket"/>
+
+		 </div>
+
+		</section>
+
+		<section >
+			<headergroup>
+			<h1 class="large action fa fa-bitbucket"> - Bitbucket</h1>
+			</headergroup>
+			<div class="row">
+				<ol class="x2">
+					<li class="action">Comprehensive ReadMe (see example)  </li>
+					<li class="action">Git Flow working practices <a href="http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/">Why not?</a> </li>
+					<li class="action">Linked with JIRA</li>
+				</ol>
+
+
+		</div>
+
+		</section>
+
+<section>
+	<headergroup>
+	<h1 class="large"> - Gitflow</h1>
+	</headergroup>
+	<div class="row">
+<paper-shadow z="3">
+	<img src="images/gitflow.png" class="section-fade" alt="gitflow"/>
+</paper-shadow>
+</div>
+
+</section>
+
+<section>
+	<headergroup>
+	<h1 class="large"> - Gitflow</h1>
+	</headergroup>
+	<div class="row action">
+
+		<google-youtube
+	  videoid="9CS7j5I6aOc"
+	  height="800px"
+	  width="1000px"
+	  rel="0"
+	  start="5"
+	  autoplay="0">
+	</google-youtube>
+
+</div>
+
+</section>
 		<section class="title-slide">
 			<p><href="https://speakerdeck.com/sdh100shaun">Slides at SpeakerDeck</a></p>
 			<p><href="https://github.com/sdh100shaun/slidestr">https://github.com/sdh100shaun/slidestr</a></p>
