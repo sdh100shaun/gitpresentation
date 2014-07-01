@@ -193,7 +193,7 @@ video {
   -webkit-animation: fade .7s ease both;
   animation: fade .7s ease both;
 }
-.slide-center {
+#slides section div.slide-center {
   margin-top: 25%;
 }
 /* Mixins */
