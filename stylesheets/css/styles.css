@@ -83,6 +83,9 @@ h4 {
   padding: 1em;
   margin-top: 2em;
 }
+#slides section ol.bigbullets {
+  font-size: large(140%);
+}
 #slides section ol li {
   padding: 0.5em;
   display: block;
@@ -189,5 +192,8 @@ video {
 .section-fade {
   -webkit-animation: fade .7s ease both;
   animation: fade .7s ease both;
+}
+.slide-center {
+  margin-top: 25%;
 }
 /* Mixins */

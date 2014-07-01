@@ -1,231 +1,275 @@
 <!DOCTYPE html>
 <html lang="en" manifest="slide.appcache">
 <head>
-	<link rel="stylesheet" type="text/css" href="stylesheets/util.css" media="screen, projection,print" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/css/styles.css" />
-	<script src="scripts/jquery-1.7-min.js" type="text/javascript" charset="utf-8"></script>
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
- <!-- Polyfill Web Components support for older browsers -->
-<script src="bower_components/platform/platform.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/util.css" media="screen, projection,print"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/css/styles.css"/>
+    <script src="scripts/jquery-1.7-min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Polyfill Web Components support for older browsers -->
+    <script src="bower_components/platform/platform.js"></script>
 
-<!-- Import element -->
-<link rel="import" href="bower_components/google-youtube/google-youtube.html">
-<link rel="import" href="bower_components/paper-elements/paper-elements.html">
+    <!-- Import element -->
+    <link rel="import" href="bower_components/google-youtube/google-youtube.html">
+    <link rel="import" href="bower_components/paper-elements/paper-elements.html">
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a name="previous">Previous</a></li>
-				<li><a name="next">Next</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div id="slides">
-		<section class="title-slide">
-			<headergroup>
-				<h1> GIT Version Control at UoN</h1>
-				<img src="images/git_logo.png" alt="git" />
-			<h2>Developer discussion / reccomendations </h2>
-			</headergroup>
-			<p class="action">Note: may not contain obligatory fork me jokes.</p>
-		</section>
-		<section>
-			<headergroup>
-			<h1>Where we have been </h1>
-			</headergroup>
+<header>
+    <nav>
+        <ul>
+            <li><a name="previous">Previous</a></li>
+            <li><a name="next">Next</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="slides">
+    <section class="title-slide">
+        <headergroup>
+            <h1> GIT Version Control at UoN</h1>
+            <img src="images/git_logo.png" alt="git"/>
+
+            <h2>Developer discussion / reccomendations </h2>
+        </headergroup>
+        <p class="action">Note: may not contain obligatory fork me jokes.</p>
+    </section>
+    <section>
+        <headergroup>
+            <h1>Where we have been </h1>
+        </headergroup>
 
 
-			<h2 class="action"> How to consolidate ?</h2>
-			<ul class="notop">
-				<li class="action">Sourcesafe </li>
-				<li class="action">Subversion</li>
-				<li class="action">Git
-					<ul><li class="action fa fa-github"> - Github Pro</li><li class="action fa fa-git"> - internal</li></ul></li>
-			</ul>
-		</headergroup>
+        <h2 class="action"> How to consolidate ?</h2>
+        <ul class="notop">
+            <li class="action">Sourcesafe</li>
+            <li class="action">Subversion</li>
+            <li class="action">Git
+                <ul>
+                    <li class="action fa fa-github"> - Github Pro</li>
+                    <li class="action fa fa-git"> - internal</li>
+                </ul>
+            </li>
+        </ul>
 
 
-		</section>
-		<section>
-			<headergroup>
-			<h1 class="large fa fa-bitbucket"> - Bitbucket</h1>
-			</headergroup>
-			<ol class="x2">
-				<li class="action">Free Academic license  </li>
-				<li class="action">Nice Web interface  </li>
-				<li class="action">pull requests  </li>
-				<li class="action">integration with other Atlassian tools </li>
-				<li class="action">Offsite</li>
-			</ol>
+    </section>
+    <section>
+        <headergroup>
+            <h1 class="large fa fa-bitbucket"> - Bitbucket</h1>
+        </headergroup>
+        <ol class="x2">
+            <li class="action">Free Academic license</li>
+            <li class="action">Nice Web interface</li>
+            <li class="action">pull requests</li>
+            <li class="action">integration with other Atlassian tools</li>
+            <li class="action">Offsite</li>
+        </ol>
 
 
+    </section>
+    <section>
+        <headergroup>
+            <h1 class="large action fa fa-bitbucket"> - Bitbucket</h1>
+        </headergroup>
+        <div class="row">
 
-	  </section>
-		<section>
-			<headergroup>
-			<h1 class="large action fa fa-bitbucket"> - Bitbucket</h1>
-			</headergroup>
-			<div class="row">
+            <img src="images/bitbucket.png" class="section-fade" alt="bitbucket"/>
 
-			<img src="images/bitbucket.png" class="section-fade" alt="bitbucket"/>
+        </div>
 
-		 </div>
+    </section>
 
-		</section>
-
-		<section >
-			<headergroup>
-			<h1 class="large action fa fa-bitbucket"> - Bitbucket</h1>
-			</headergroup>
-			<div class="row">
-				<ol class="x2">
-					<li class="action">Comprehensive ReadMe (see example)  </li>
-					<li class="action">Git Flow working practices <a href="http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/">Why not?</a> </li>
-					<li class="action">Linked with JIRA</li>
-				</ol>
+    <section>
+        <headergroup>
+            <h1 class="large action fa fa-bitbucket"> - Bitbucket</h1>
+        </headergroup>
+        <div class="row">
+            <ol class="x2">
+                <li class="action">Comprehensive ReadMe (see example)</li>
+                <li class="action">Git Flow working practices <a
+                        href="http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/">Why not?</a></li>
+                <li class="action">Linked with JIRA</li>
+            </ol>
 
 
-		</div>
+        </div>
 
-		</section>
+    </section>
+    <section>
+        <headergroup>
+            <h1 class="large"> Gitflow</h1>
+        </headergroup>
 
-<section>
-	<headergroup>
-	<h1 class="large"> What is Gitflow</h1>
-	</headergroup>
-	<div class="row">
-<paper-shadow z="3">
-	<img src="images/gitflow.png" class="section-fade" alt="gitflow"/>
-</paper-shadow>
+        <p>GitFlow is a branching model for Git, created by Vincent Driessen. It has attracted
+            a lot of attention because it is very well suited to collaboration and scaling the development team.</p>
+        <ul>
+            <li>Parallel Development</li>
+            <li>Collaboration</li>
+            <li>Support For Emergency Fixes</li>
+        </ul>
+
+    </section>
+    <section>
+        <headergroup>
+            <h1 class="large"> What is Gitflow ?</h1>
+        </headergroup>
+        <div class="row">
+            <paper-shadow z="3">
+                <img src="images/gitflow.png" class="section-fade" alt="gitflow"/>
+            </paper-shadow>
+        </div>
+
+    </section>
+
+
+    <section>
+        <headergroup>
+						<h1> The branches</h1>
+				</headergroup>
+
+        <div class="slide-center">
+            <ul>
+                <li class="large"> Master</li>
+                <li class="large">Develop</li>
+                <li class="large">Feature / *</li>
+                <li class="large">Release / *</li>
+                <li class="large">Hotfix- *</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="slide-center">
+            <p class="large"> What is a feature ?</p>
+
+            <p>New development (such as features and non-emergency bug fixes) is done in feature branches,
+                and is only merged back into main body of code (develop) when the developer(s) is happy that the code is
+                ready for
+                go out onto a dev server or for review.
+            </p>
+        </div>
+
+    </section>
+
+    <section>
+        <img src="images/git-flow-feature-branch.jpg" alt="feature"/>
+    </section>
+
+    <section>
+        <div class="slide-center">
+            <p class="large"> What is a release</p>
+
+            <p>A Release is a branch that is as the name suggest ready to deploy (in our proposal also pushed to UAT)
+                this branch is merged back into develop and master on completion. Using a dedicated branch to prepare
+                releases makes it possible for
+                refinements on the current release that are not lost and don't stop working on features for the next
+                release.
+        </div>
+    </section>
+
+    <section>
+        <div class="slide-center">
+            <p class="large"> Whats a Hotfix ? </p>
+
+            <p>
+                "hotfix" branches are used to quickly patch production releases.
+                This is the only branch that should fork directly off of master.
+                As soon as the fix is complete, it should be merged into both master and develop
+            </p>
+
+            <p><a href="https://www.atlassian.com/git/workflows#!workflow-gitflow"> More examples</a></p>
+        </div>
+    </section>
+
+
+    <section>
+        <headergroup>
+            <h1> SourceTree </h1>
+        </headergroup>
+
+        <img src="images/sourcetree.png" alt="sourcetree"/>
+
+        <a href="https://www.atlassian.com/software/sourcetree/overview">https://www.atlassian.com/software/sourcetree/</a>
+    </section>
+
+    <section>
+        <headergroup>
+            <h1> Deployment Benefits </h1>
+        </headergroup>
+
+        <ul>
+            <li class="action">Aids continuous deployment</li>
+            <li class="action">Uniformity means can build out repeatable build plans</li>
+        </ul>
+
+        <p class="action"> How it works </p>
+
+        <p class="action"> 1. Git is installed on dev and test servers </p>
+
+        <p class="action"> 2. Develop branch (if source code deployed) or development build artifacts can be push to
+            recieving repository</p>
+
+        <p class="action"> 3. Release branch can be pushed to UAT servers
+
+
+    </section>
+
+    <section>
+        <headergroup><h1>Bamboo</h1></headergroup>
+				<paper-shadow z="3">
+        	<img src="images/bamboo-screen.png"/>
+				</paper-shadow>
+        <div class="row">
+            <p>Continuous Integration is the practice of testing each change done to your codebase automatically and as
+                early as possible. But this paves the way for the more important process: Continuous Deployment.
+            </p>
+
+            <p>
+                Continuous Deployment follows your tests to push your changes to either a staging or production system.
+                This makes sure a version of your code is always accessible.
+            </p></div>
+
+    </section>
+    <section>
+        <headergroup><h1>Bamboo</h1></headergroup>
+        <img src="images/bamboo-wallboard.png"/>
+
+        <div class="row">
+            <a href="http://martinfowler.com/articles/continuousIntegration.html">More from Martin Fowler </a>
+        </div>
+
+    </section>
+
+    <section class="title-slide">
+        <h1> Thoughts? </h1>
+    </section>
 </div>
-
-</section>
-
-<section>
-	<headergroup>
-	<h1 class="large"> Gitflow</h1>
-	</headergroup>
-	<div class="row action">
-		<p> Simple right not really a mind explosion.
-		<google-youtube
-	  videoid="9CS7j5I6aOc"
-	  height="800px"
-	  width="1000px"
-	  rel="0"
-	  start="5"
-	  autoplay="0">
-	</google-youtube>
-	<p>GitFlow is a branching model for Git, created by Vincent Driessen. It has attracted
-		a lot of attention because it is very well suited to collaboration and scaling the development team.</p>
-		<ul>
-			<li>Parallel Development</li>
-				<li>
-Collaboration </li>
-
-<li>Support For Emergency Fixes</li>
-</ul>
-</div>
-</section>
-		<section>
-			<p> The git flow branches</p>
-
-			<ol><li> Master </li>
-				<li>Develop</li>
-				<li>Feature / * </li>
-				<li>Release / * </li>
-				<li>Hotfix / * </li>
-			</ol>
-
-		</section>
-
-		<section>
-			<p> What is a feature ?</p>
-			<p>New development (such as features and non-emergency bug fixes) is done in feature branches,
-			and is only merged back into main body of code when the developer(s) is happy that the code is ready for release.
-		</p>
-
-		</section>
-
-		<section>
-			<p> What is a release</p>
-
-		</section>
-
-<section>
-	<p> Whats a Hotfix - how will it help us. </p>
-</section>
-		
-
-		<section>
-				<p> Can it work here </p>
-		</section>
-
-		<section>
-			<headergroup>
-				<h1> SourceTree </h1>
-
-			</headergroup>
-
-				<p> Can it work here ? </p>
-		</section>
-
-		<section>
-			<headergroup>
-				<h1> Deployment Benefits </h1>
-			</headergroup>
-				<ul>
-						<li class="action">Aids continuous deployment</li>
-						<li class="action">Uniformity means can build out repeatable build plans</li>
-				</ul>
-
-				<p class="action"> How it works </p>
-
-				<p class="action"> 1. Git is installed on dev and test servers </p>
-				<p class="action"> 2. Develop branch (if source code deployed) or development build artifacts can be push to recieving repository</p>
-				<p class="action"> 3. Release branch  can be pushed to UAT servers
-				<p class="action"> 3. Release branch  can be pushed to UAT servers
-
-		</section>
-
-		<section>
-			<p>Bamboo</p>
-		</section>
-
-		<section class="title-slide">
-		<h1> Thank you </h1>
-		</section>
-	</div>
-	<script src="scripts/slidestr.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/slidestr.js" type="text/javascript" charset="utf-8"></script>
 </body>
 <script>
 
-$(document).ready(function(){
-	$('html').bind('slideChange.slidestr',function(e,slide){
+    $(document).ready(function () {
+        $('html').bind('slideChange.slidestr', function (e, slide) {
 
-		switch(slide)
-		{
-			case 8:
-			{
-				var section=1;
-				document.addEventListener('keydown', function(e)
-				        {
-				          switch(e.keyCode)
-				                {
-									case 81:
-										$("a[href='#Section"+section+"']").trigger("click");
+            switch (slide) {
+                case 8:
+                {
+                    var section = 1;
+                    document.addEventListener('keydown', function (e) {
+                        switch (e.keyCode) {
+                            case 81:
+                                $("a[href='#Section" + section + "']").trigger("click");
 
-;										section++;
-									default:
-									console.log(e.keyCode);
-									break;
-								}
-				});
-				break;
-			}
-		}
-	});
-});
-slides.init();
+                                ;
+                                section++;
+                            default:
+                                console.log(e.keyCode);
+                                break;
+                        }
+                    });
+                    break;
+                }
+            }
+        });
+    });
+    slides.init();
 </script>
 </html>
