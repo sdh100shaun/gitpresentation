@@ -133,7 +133,7 @@
                 <li class="large">Release / *</li>
                 <li class="large">Hotfix- *</li>
             </ul>
-      
+
     </section>
 
     <section>
@@ -207,7 +207,9 @@
         <p class="action"> 2. Develop branch (if source code deployed) or development build artifacts can be push to
             recieving repository</p>
 
-        <p class="action"> 3. Release branch can be pushed to UAT servers
+        <p class="action"> 3. Release branch can be pushed to UAT servers</p>
+
+          <p class="action"> 4. Recieving repositories can run appropriate actions through git hooks (move files, iis restart, composer install etc etc )</p>
 
 
     </section>
@@ -215,7 +217,9 @@
     <section>
         <headergroup><h1>Bamboo</h1></headergroup>
 				<paper-shadow z="3">
-        	<img src="images/bamboo-screen.png"/>
+
+          <img style="float:left;" src="images/bamboo-wallboard.png"/>
+          <img style="float:left;margin:0.2em;"  src="images/bamboo-screen.png"/>
 				</paper-shadow>
         <div class="row">
             <p>Continuous Integration is the practice of testing each change done to your codebase automatically and as
@@ -226,17 +230,11 @@
                 Continuous Deployment follows your tests to push your changes to either a staging or production system.
                 This makes sure a version of your code is always accessible.
             </p></div>
-
+<div class="row">
+    <a href="http://martinfowler.com/articles/continuousIntegration.html">More from Martin Fowler </a>
+</div>
     </section>
-    <section>
-        <headergroup><h1>Bamboo</h1></headergroup>
-        <img src="images/bamboo-wallboard.png"/>
 
-        <div class="row">
-            <a href="http://martinfowler.com/articles/continuousIntegration.html">More from Martin Fowler </a>
-        </div>
-
-    </section>
 
     <section class="title-slide">
         <h1> Thoughts? </h1>
